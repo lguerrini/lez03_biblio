@@ -22,16 +22,19 @@ public class Bibliotecario {
     public void cambianomeBiblioteca(String nuovonome){
         biblioteca.setNome(nuovonome);
     }
+    
     public void addLibro(String autore,String titolo,String genere){
         int id=biblioteca.getLastId_libro()+1;
         Libro lib= new Libro(id, titolo, autore, genere);
         biblioteca.getElencoLibri().add(lib);
     }
+    
     public void addUtente(String cognome,String nome){
         int id=biblioteca.getLastId_utente()+1;
         Utente ut= new Utente(id, cognome, nome);
         biblioteca.getElencoUtenti().add(ut);
     }
+    
     public void newPrestito (int id_libro, int id_utente){
         Prestito newprestito =new Prestito(id_utente, id_libro);
         biblioteca.getElencoPrestiti().add(newprestito);
