@@ -73,8 +73,8 @@ public class Biblioteca {
     public int getLastId_libro() {
         int ris = 0;
         // cerco l'ultimo libro
-        int pos = elencoLibri.size() - 1;
-        if (pos == -1) {
+        int pos = elencoLibri.size();
+        if (pos == 0) {
             return 0;
         } else {
             Libro lastlibro = elencoLibri.get(pos);
