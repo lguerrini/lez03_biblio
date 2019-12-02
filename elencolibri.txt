@@ -1,0 +1,12 @@
+1) cod:1 - cuore - deamicis
+2) cod:2 - promessi sposi - manzoni
+3) cod:3 - io robot - asimov
+4) cod:4 - cuore - deamicis2
+5) cod:5 - promessi sposi - manzoni2
+6) cod:6 - io robot - asimov2
+7) cod:14 - cuore - deamicis12
+8) cod:15 - promessi sposi - manzoni12
+9) cod:16 - io robot - asimov12
+10) cod:24 - cuore - deamicis22
+11) cod:25 - promessi sposi - manzoni22
+12) cod:26 - io robot - asimov22

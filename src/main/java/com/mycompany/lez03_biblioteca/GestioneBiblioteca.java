@@ -20,17 +20,27 @@ public class GestioneBiblioteca extends javax.swing.JFrame {
     public GestioneBiblioteca() {
         myB= new Biblioteca("civ Ivrea", "ivrea", "via roma 2", "0125343434");
         leo= new Bibliotecario("luca",myB);
-        leo.addLibro("deamicis", "cuore", "storia");
-        leo.addLibro("manzoni", "promessi sposi", "letteratura");
-        leo.addLibro("asimov", "io robot", "science fiction");
+        myB.readAddLibroCSV();
         
+//        leo.addLibro("deamicis2", "cuore", "storia");
+//        leo.addLibro("manzoni2", "promessi sposi", "letteratura");
+//        leo.addLibro("asimov2", "io robot", "science fiction");
+//        
 
 //myB.getElencoLibri().remove(0);
         leo.addUtente("guerrini", "Luca");
         leo.newPrestito(3, 1);
         leo.newPrestito(1, 1);
         
+        //System.out.println(myB.getListaLibri());
+        // chiamare stampalibri che crea file elencolibri.txt
+        myB.stampaLibri();
+        
+        //System.out.println(myB.readFileTXT());
+        
+        //myB.readAddLibroCSV();
         System.out.println(myB.getListaLibri());
+        
         initComponents();
     }
 

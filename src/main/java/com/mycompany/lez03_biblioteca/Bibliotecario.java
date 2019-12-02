@@ -27,6 +27,7 @@ public class Bibliotecario {
         int id=biblioteca.getLastId_libro()+1;
         Libro lib= new Libro(id, titolo, autore, genere);
         biblioteca.getElencoLibri().add(lib);
+        biblioteca.stampaLibriCSV();
     }
     
     public void addUtente(String cognome,String nome){
